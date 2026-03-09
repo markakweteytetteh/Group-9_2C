@@ -66,7 +66,7 @@ function getStatusMessage($status)
 <head>
     <meta charset="UTF-8">
     <title>Dashboard | Job Application Portal</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>

@@ -41,18 +41,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Login | Job Application Portal</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
-  <header class="header">
-      <img src="images/logo_1.png" alt="Logo" class="logo">
-      <h1>Job Application Portal</h1>
-  </header>
+    <header class="header">
+        <img src="images/logo_1.png" alt="Logo" class="logo">
+        <h1>Job Application Portal</h1>
+    </header>
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="register.php">Register</a></li>
             <li><a href="login.php">Login</a></li>
         </ul>

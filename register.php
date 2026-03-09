@@ -166,7 +166,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Register | Job Application Portal</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -178,7 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="register.php">Register</a></li>
             <li><a href="login.php">Login</a></li>
         </ul>
@@ -187,7 +187,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <section>
         <h2>User Registration</h2>
 
-            <?php echo $message; ?>
+        <?php echo $message; ?>
 
         <form method="POST" enctype="multipart/form-data">
 
