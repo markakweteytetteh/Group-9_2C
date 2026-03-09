@@ -199,7 +199,7 @@ footer {
 .slides {
     display: flex;
     width: 300%;
-    animation: slide 45s infinite;
+    animation: slide 45s linear infinite;
 }
 
 .slides img {
@@ -212,7 +212,7 @@ footer {
 @keyframes slide {
     0%   { transform: translateX(0); }
     33.33%  { transform: translateX(-100%); } 
-    66%  { transform: translateX(-200%); }
+    66.66%  { transform: translateX(-200%); }
     100% { transform: translateX(0); }
 }
 
