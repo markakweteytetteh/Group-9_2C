@@ -211,9 +211,9 @@ footer {
 /* Animation */
 @keyframes slide {
     0%   { transform: translateX(0); }
-    33%  { transform: translateX(-100%); } 
+    33.33%  { transform: translateX(-100%); } 
     66%  { transform: translateX(-200%); }
-    80% { transform: translateX(0); }
+    100% { transform: translateX(0); }
 }
 
 .logo {
