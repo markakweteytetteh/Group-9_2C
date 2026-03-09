@@ -211,11 +211,11 @@ footer {
 /* Animation */
 @keyframes slide {
     0%   { transform: translateX(0); }
-    33.33%  { transform: translateX(-100%); } 
-    66.66%  { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+    13.33%  { transform: translateX(-100%); } 
+    26.66%  { transform: translateX(-200%); }
+    60%  { transform: translateX(-200%); } /* Hold last image for 30s */
+    100% { transform: translateX(0); } /* Loop back */
 }
-
 .logo {
     width: 35px;   /* Adjust if needed */
     height: auto;
