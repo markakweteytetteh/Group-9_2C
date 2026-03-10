@@ -242,8 +242,8 @@ footer {
 .slides {
     display: flex;
     width: 300%;
-    animation: slide 90s linear infinite;
     height: 100%;
+    animation: slide 63s infinite;
 }
 
 .slides img {
@@ -253,12 +253,15 @@ footer {
     flex: 1;
 }
 
-/* Animation */
+/* Smooth slide animation: 20s per image + 1s transition */
 @keyframes slide {
-    0%   { transform: translateX(0); }
-    33.33%  { transform: translateX(-100%); }
-    66.66%  { transform: translateX(-200%); }
-    100% { transform: translateX(-200%); }
+    0%      { transform: translateX(0); }
+    31.75%  { transform: translateX(0); }    /* hold first image */
+    33.33%  { transform: translateX(-100%); }/* 1s transition */
+    64.1%   { transform: translateX(-100%); }/* hold second image */
+    65.87%  { transform: translateX(-200%); }/* 1s transition */
+    96.83%  { transform: translateX(-200%); }/* hold third image */
+    100%    { transform: translateX(0); }    /* transition back to first */
 }
 
 .logo {
@@ -273,7 +276,6 @@ footer {
 /*        RESPONSIVE STYLES      */
 /* ============================= */
 
-/* Tablets (768px and above) */
 @media screen and (max-width: 768px) {
     header {
         padding: 12px 15px;
@@ -304,7 +306,6 @@ footer {
     }
 }
 
-/* Small devices (480px and below) */
 @media screen and (max-width: 480px) {
     html {
         font-size: 14px;
@@ -409,7 +410,6 @@ footer {
     }
 }
 
-/* Extra small devices (320px and above) */
 @media screen and (max-width: 320px) {
     html {
         font-size: 13px;
